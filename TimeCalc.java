@@ -8,17 +8,11 @@ public class TimeCalc {
 
         int minutesToAdd = Integer.parseInt(args[1]);
 
-        System.out.println("hours: " + hours);
-        System.out.println("minutes: " + minutes);
-        System.out.println("minutes to add: " + minutesToAdd);
-
         int totalMinutes = (hours * 60) + minutes + minutesToAdd;
         int totalHours = totalMinutes / 60;
         int newHours = totalHours % 24;
         int newMinutes = totalMinutes - (totalHours * 60);
 
-        System.out.println("new hours: " + newHours);
-        System.out.println("new minutes: " + newMinutes);
 
         if (newMinutes > 10)
         {
