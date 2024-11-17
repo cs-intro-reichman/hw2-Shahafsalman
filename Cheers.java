@@ -11,7 +11,7 @@ public class Cheers {
                         || (cheer.charAt(i) == 'I') || (cheer.charAt(i) == 'L') || (cheer.charAt(i) == 'M') || (cheer.charAt(i) == 'N')
                         || (cheer.charAt(i) == 'O') || (cheer.charAt(i) == 'R') || (cheer.charAt(i) == 'S') || (cheer.charAt(i) == 'X'))
                         {
-                                System.out.println("Give me an  " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!");
+                                System.out.println("Give me an " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!");
                         }
                         else
                         {
