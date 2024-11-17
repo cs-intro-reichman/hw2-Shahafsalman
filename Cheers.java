@@ -18,7 +18,7 @@ public class Cheers {
                                 System.out.println("Give me a  " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!");
                         }
                 }
-        System.out.println("what does that spell?");
+        System.out.println("What does that spell?");
 
                 for (int x = 0; x < num; x++)
                 {
