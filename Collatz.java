@@ -3,8 +3,8 @@ public class Collatz {
 	public static void main(String args[]) 
 	{
 		int seed = 1;
-		int maxSeed = Integer.parseInt(args[0]);
-		String mode = args[1];
+		String mode = "-";
+		int maxSeed = Integer.parseInt("4");
 		int origMaxSeed = maxSeed;
 		int seedForLoop = maxSeed;
 
@@ -24,13 +24,12 @@ public class Collatz {
 						maxSeed = (maxSeed * 3) + 1;
 					}
 				}
+				System.out.println(" ");
 				seedForLoop --;
 			}
 			System.out.println("1");
 		}
-		
-		System.out.println("Every one of the first " + origMaxSeed + " hailstone sequences reached 1.");
-
+		System.out.println(mode + "Every one of the first " + origMaxSeed + " hailstone sequences reached 1.");
 
 	}
 }
