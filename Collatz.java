@@ -10,7 +10,7 @@ public class Collatz {
 
 		if (mode.equals("v"))
 		{
-		System.out.println("1 4 2 1 (1)");
+		System.out.println("1 4 2 1 (4)");
 		
 		for (int i = 1; i < seed; i++ )
 		{	
