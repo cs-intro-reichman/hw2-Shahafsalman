@@ -2,34 +2,46 @@
 public class Collatz {
 	public static void main(String args[]) 
 	{
-		int seed = 1;
-		String mode = "-";
-		int maxSeed = Integer.parseInt("4");
-		int origMaxSeed = maxSeed;
-		int seedForLoop = maxSeed;
+		int seed = Integer.parseInt(args[0]);
+		String mode = args[1];
+		int num = 2;
+		int save = 2;
+		int count = 0;
 
-		if (mode == "v")
+		if (mode.equals("v"))
 		{
-			for (int i = 0; i < seedForLoop; i++)
+		System.out.println("1 4 2 1 (1)");
+		
+		for (int i = 1; i < seed; i++ )
+		{	
+			System.out.print(num + " ");
+			while (num != 1)
 			{
-				while (maxSeed != 1)
+				
+				if (num % 2 == 0)
 				{
-					System.out.println(maxSeed);
-					if (maxSeed % 2 == 0)
-					{
-						maxSeed = maxSeed / 2;
-					}
-					else
-					{
-						maxSeed = (maxSeed * 3) + 1;
-					}
+					num = num / 2;
+					System.out.print(num + " ");
+					count ++;
 				}
-				System.out.println(" ");
-				seedForLoop --;
+				else
+				{
+					num = num * 3 + 1;
+					System.out.print(num + " ");
+					count ++;
+				}
+				
 			}
-			System.out.println("1");
+			count ++;
+				System.out.println("(" + count + ")");
+				num = save + 1;
+				save ++;
+				count = 0;
 		}
-		System.out.println(mode + "Every one of the first " + origMaxSeed + " hailstone sequences reached 1.");
+		System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
+		}
+
+		System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
 
 	}
 }
